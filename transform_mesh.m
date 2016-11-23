@@ -18,10 +18,10 @@ if(ismatrix(A))
     if(size(A,1) ~= 3 && size(A,2) ~= 3)
         error('A has to be a 3x3 matrix.');
     end
-elseif(~ismatrix(A))
-    error('Make sure that A is a matrix');
 elseif(isempty(A))
     error('A is empty.');
+elseif(~ismatrix(A))
+    error('Make sure that A is a matrix');
 end
 
 % Step 5
@@ -29,10 +29,10 @@ if(ismatrix(V))
     if(size(A,2) ~= 3)
         error('V has to have 3 columns.');
     end
-elseif(~ismatrix(V))
-    error('Make sure that V is a matrix');
 elseif(isempty(V))
     error('V is empty.');
+elseif(~ismatrix(V))
+    error('Make sure that V is a matrix');
 end
 
 % Step 6
@@ -42,10 +42,10 @@ if(ismatrix(T))
             error('T has to have 3 or 4 columns.');
         end
     end
-elseif(~ismatrix(T))
-    error('Make sure that T is a matrix');
 elseif(isempty(T))
     error('T is empty.');
+elseif(~ismatrix(T))
+    error('Make sure that T is a matrix');
 end
 
 % Step 7
@@ -126,3 +126,4 @@ end
 %     0.3750    0.3750   -0.9186
 %     0.1250    1.1250    0.9186
 %    -0.3062    0.9186   -0.7500
+    
