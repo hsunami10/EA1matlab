@@ -21,9 +21,11 @@ noise = noise_level*(rand(1,length(t))-0.5);
 
 % Generate s(t)
 s_t = [];
+frequency = 0;
 for ii = 1:length(amplitudes)
+    frequency = frequency + 1;
     for jj = 1:size(t,2)
-        s_t(ii,jj) = amplitudes(1,ii) * cos(2*pi*t(jj));
+        s_t(ii,jj) = amplitudes(1,ii) * cos(2*pi*frequency*t(jj));
     end
 end
 

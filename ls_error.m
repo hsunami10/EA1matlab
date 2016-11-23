@@ -32,9 +32,11 @@ M = length(t(1:20:length(t)));
 
 approx_error = norm(x'-F*B)^2/M;
 entire_approx_error = norm(sig-u')^2/length(sig);
-fprintf('Estimatino of coefficients: %f', B);
-fprintf('Approximation error: %f', approx_error);
-fprintf('Entire approximation error: %f', entire_approx_error);
+for ii = 1:length(B)
+    fprintf('Estimation of coefficients: %f\n', B(ii));
+end
+fprintf('Approximation error: %f\n', approx_error);
+fprintf('Entire approximation error: %f\n', entire_approx_error);
 hold on
 plot(sig);
 plot(sig_approx);
