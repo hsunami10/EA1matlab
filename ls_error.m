@@ -40,3 +40,12 @@ fprintf('Entire approximation error: %f\n', entire_approx_error);
 hold on
 plot(sig);
 plot(sig_approx);
+
+% Test case 1:
+% Estimation of coefficients: 1.000000
+% Estimation of coefficients: -1.000000
+% Estimation of coefficients: -1.000000
+% Estimation of coefficients: 2.000000
+% Approximation error: 0.000000
+% Entire approximation error: 0.000000
+% Answer: 

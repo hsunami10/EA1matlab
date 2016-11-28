@@ -11,7 +11,7 @@ if(size(amplitudes,1) ~= 1)
     error('Amplitudes has to be a row vector.');
 end
 
-if(noise_level <= 0)
+if(noise_level < 0)
     error('Make sure noise level is positive');
 end
 
