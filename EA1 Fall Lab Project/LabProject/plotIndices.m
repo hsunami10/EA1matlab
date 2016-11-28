@@ -13,6 +13,8 @@ title('Scrambled Indices');
 xlabel('Player ID');
 ylabel('Database Column');
 plot(x,y1,'o');
+axis equal;
+axis square;
 
 subplot(1,2,2);
 axis square;
@@ -21,3 +23,5 @@ title('Scrambled Indices');
 xlabel('Player ID');
 ylabel('Database Column');
 plot(x,y2,'o');
+axis equal;
+axis square;

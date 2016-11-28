@@ -2,8 +2,6 @@ function PSNR = calcPSNR(x1,x2,maxX)
 
 if(nargin < 3)
     maxX = 1;
-else
-    maxX = max(x1);
 end
 
 MSE = calcMSE(x1,x2);
