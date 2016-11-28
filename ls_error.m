@@ -48,4 +48,4 @@ plot(sig_approx);
 % Estimation of coefficients: 2.000000
 % Approximation error: 0.000000
 % Entire approximation error: 0.000000
-% Answer: 
+% f1 is present
