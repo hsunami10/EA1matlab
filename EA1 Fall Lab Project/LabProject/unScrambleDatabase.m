@@ -17,7 +17,7 @@ function [newDatabase,indices] = unScrambleDatabase(imagePath,database)
 
 indices = zeros(1,size(database,2));
 newDatabase = zeros(size(database));
-for ii = 1:100
+for ii = 1:size(database,2)
    x = readImage(strcat(imagePath, strrep('player0.png', '0', num2str(ii))));
    minPos = findMinimumErrorPosition(x(:), database);
    indices(ii) = minPos;
