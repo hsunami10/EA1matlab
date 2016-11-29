@@ -42,6 +42,7 @@ plot(sig);
 plot(sig_approx);
 
 % Test case 1:
+% All are present
 % Estimation of coefficients: 1.000000
 % Estimation of coefficients: -1.000000
 % Estimation of coefficients: -1.000000
@@ -49,3 +50,53 @@ plot(sig_approx);
 % Approximation error: 0.000000
 % Entire approximation error: 0.000000
 % f1 is present
+% Estimation of coefficients: 1.000000
+% Approximation error: 2.926829
+% Entire approximation error: 2.996255
+% f1 f2 are present
+% Estimation of coefficients: 1.045455
+% Estimation of coefficients: -0.954545
+% Approximation error: 2.461197
+% Entire approximation error: 2.499974
+% f1 f2 f3 are present
+% Estimation of coefficients: 1.086957
+% Estimation of coefficients: -0.913043
+% Estimation of coefficients: -0.913043
+% Approximation error: 2.036055
+% Entire approximation error: 2.012607
+% Answer: least squares approximation error decreases
+
+% Test case 2:
+% All are present
+% Estimation of coefficients: -1.151803
+% Estimation of coefficients: 2.098783
+% Estimation of coefficients: -0.134692
+% Estimation of coefficients: -0.030790
+% Approximation error: 0.318737
+% Entire approximation error: 0.358223
+% f1 is present
+% Estimation of coefficients: -1.059741
+% Approximation error: 2.563597
+% Entire approximation error: 2.364274
+% f1 f2 are present
+% Estimation of coefficients: -1.159325
+% Estimation of coefficients: 2.091261
+% Approximation error: 0.328657
+% Entire approximation error: 0.349357
+% f1 f2 f3 are present
+% Estimation of coefficients: -1.153142
+% Estimation of coefficients: 2.097444
+% Estimation of coefficients: -0.136030
+% Approximation error: 0.319220
+% Entire approximation error: 0.357677
+% frequencies 1:6
+% Estimation of coefficients: -1.149207
+% Estimation of coefficients: 2.101379
+% Estimation of coefficients: -0.132095
+% Estimation of coefficients: -0.028194
+% Estimation of coefficients: -0.062319
+% Estimation of coefficients: 0.000000
+% Approximation error: 0.314870
+% Entire approximation error: 0.355494
+% It does always help to include more frequencies, since more frequencies
+% mean more data, which would give a closer approximation
