@@ -12,7 +12,7 @@ clear; close all; clc
 
 imagePath = ['.', filesep(), 'Player_Images', filesep()];
 
-playerNumber = 50;  % You should use your picked image after you
+playerNumber = 14;  % You should use your picked image after you
                     % identify it in the Player_Images folder
 
 playerImage = [imagePath, 'player', num2str(playerNumber), '.png'];
